@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html ng-app="StudyB">
+<html ng-app="studyB">
 
 <head>
     <title> StudyBuddy App - find someone to study with!</title>
-    <!-- Bootstrap CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ -->
+
 </head>
 
-<body>
-  
+
+
+<div ng-controller="loginCtrl">
+    <button ng-click="logFunc()">Google login</button>
+    
+</div>
+
 
   
-  <!-- Angular -->
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
-  <!-- UI-Router -->    
-  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
 
-  <!-- Firebase -->
+  
 
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  <script>
+
+
+
+
+
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
+<!-- UI-Router -->    
+<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  
+<script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCkYmV3fEUstNniCV3WoHqfTCI3C_Iy0cQ",
@@ -32,12 +52,12 @@
     storageBucket: "studybuddy-1100.appspot.com",
   };
   firebase.initializeApp(config);
-  </script>
+</script>
     
-  <!-- App Script -->
-  <script src="js/app.js"></script>
-  <script src="js/controllers.js"></script>
-
+<!-- App Script -->
+<script src="js/app.js"></script>
+<!-- <script src="js/controllers.js"></script>
+ -->
 </body>
 
 </html>
