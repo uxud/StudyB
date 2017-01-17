@@ -1,0 +1,27 @@
+    <div class="row top-mini">
+      <div class="col-md-10">
+        <div class="panel panel-primary">
+          <div class="panel-heading"> Pablo </div>
+          <div class="panel-body clearfix">
+            <div ng-repeat = "x in messages">
+              <div class="row message-them" ng-if="x.name!= 'me'">
+                <span><img src="../img/profile.png" width="42" height="42"></span>
+                <span style="margin-left:10px;"> {{x.body}}</span>
+              </div>
+              <div class="row message-me" ng-if="x.name == 'me' ">
+                <span><img src="../img/profile2.png" width="42" height="42"></span>
+                <span style="margin-left:10px;"> {{x.body}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+                 <div class="input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Send</button>
+                  </span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>

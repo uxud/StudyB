@@ -5,51 +5,91 @@
     <title> StudyBuddy App - find someone to study with!</title>
 
 
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+    
+  </script>
+
+
 <!-- Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="css/navbar-left.css">
+
+
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+<!-- google sheets -->
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lobster|Marck+Script" rel="stylesheet">
+
+
+
 <!-- Optional theme -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
- -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+  body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  }
+</style>
+
+
 
 </head>
 
-
-
-<div ng-controller="loginCtrl">
-    <button ng-click="logFunc()">Google login</button>
-    
+<body>
+<div class="container-fluid" style="background-color:yellow;">
+  <div class="row" style="background-color:red;" ui-view>
+  </div>
 </div>
 
 
-  
 
-  
+<!--
+<div class="navbar navbar-fixed-side">
+<div class="row">
+<div class="col-md-4 col-md-offset-4 text-center">STUDYBUDDY</div>
+<div class='col-md-4 text-right' style="padding-right:50px;" >About / Contact </div>
+</div>
+</div>
+-->
 
 
 
 
-
-
+</body>
 <!-- AngularJS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
+
+
 <!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+
 
 <!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
 
 <!-- UI-Router -->    
-<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
   
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCkYmV3fEUstNniCV3WoHqfTCI3C_Iy0cQ",
-    authDomain: "studybuddy-1100.firebaseapp.com",
-    databaseURL: "https://studybuddy-1100.firebaseio.com",
-    storageBucket: "studybuddy-1100.appspot.com",
+    apiKey: "AIzaSyBpI2gJVrc4tGTBLuiCAkV2WLmRCIKLE5o",
+    authDomain: "stdybudy-4aa82.firebaseapp.com",
+    databaseURL: "https://stdybudy-4aa82.firebaseio.com",
+    storageBucket: "stdybudy-4aa82.appspot.com",
+    messagingSenderId: "565651434536"
   };
   firebase.initializeApp(config);
 </script>
@@ -58,6 +98,5 @@
 <script src="js/app.js"></script>
 <!-- <script src="js/controllers.js"></script>
  -->
-</body>
 
 </html>
